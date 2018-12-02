@@ -1,11 +1,17 @@
-def largestPrime(max_val): 
-    
+#get the largest prime factor of a value
+def largestPrimeFactor(max_val): 
 
-    #generate the list of primes
-    num_list = [num for num in range(1,max_val)]
-    for num in 
-    
-    print(prime_list)
+    curr = 2
+    while (curr * curr) <= max_val:
+        while max_val > 1:
+            if max_val % curr != 0:
+                curr += 1
+            else:
+                max_val = max_val // curr
 
-largestPrime(13732)
+    return curr
+            
+        
+
+print(largestPrimeFactor(600851475143))
 
