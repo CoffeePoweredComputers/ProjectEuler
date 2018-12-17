@@ -1,11 +1,6 @@
 import math
 
-CASE1 = [1,13,17,29,37,41,49,53]
-CASE2 = [7,19,31,43]
-CASE3 = [11,23,47,59]
-
-
-def atkin(max_num):
+def atkin_sieve(max_num):
     
     #to upt o and includeing the max num
     #max_num += 1
@@ -43,7 +38,4 @@ def atkin(max_num):
 
 
     return (res + [num for num in range(6,len(sieve)) if sieve[num] == 1])
-
-#call it
-print(atkin(10000)[-1:])
 
